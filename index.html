@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍽️ Calorie Calculator</h1>
+        
+        <div class="input-section">
+            <input type="text" id="foodInput" placeholder="Enter food item...">
+            <input type="number" id="calorieInput" placeholder="Calories">
+            <button id="addButton">Add Food</button>
+        </div>
+
+        <div class="summary-section">
+            <h2>Today's Summary</h2>
+            <p>Total Calories: <span id="totalCalories">0</span></p>
+            <div id="foodList" class="food-list"></div>
+        </div>
+
+        <div class="history-section">
+            <h2>Food History</h2>
+            <ul id="historyList" class="history-list"></ul>
+        </div>
+    </div>
+
+    <script type="module" src="./CalorieCounterApp.js"></script>
+</body>
+</html>
