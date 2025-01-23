@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    
+  <script type="module" crossorigin src="/assets/index-5fffcfab.js"></script>
+  <link rel="stylesheet" href="/assets/index-1967352f.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Counter</h1>
+        
+        <div class="input-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="foodInput" 
+                    placeholder="Start typing food name..."
+                    autocomplete="off"
+                >
+                <div id="suggestions" class="suggestions-list"></div>
+            </div>
+            <input 
+                type="number" 
+                id="calorieInput" 
+                placeholder="Calories"
+                min="0"
+            >
+            <button id="addButton">Add Food</button>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+            <div class="progress-info">
+                <span>Daily Progress: </span>
+                <span id="totalCalories">0</span> / 
+                <span id="calorieGoal">2000</span> calories
+                <button id="setGoalButton" class="small-button">Set Goal</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="food-list-section">
+                <h2>Today's Food Log</h2>
+                <div class="list-container">
+                    <ul id="foodList"></ul>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h2>Daily Statistics</h2>
+                <div id="statsDisplay" class="stats-grid"></div>
+            </div>
+        </div>
+
+        <div id="notification" class="notification"></div>
+    </div>
+    
+    
+</body>
+</html>
